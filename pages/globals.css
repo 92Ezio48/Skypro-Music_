@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+}
+body,
+html,
+#__next,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #383838;
+}
+.app-content {
+  display: grid;
+  grid-template-columns: 60px 1fr 244px; /* 60px = узкий левый бар! 244px = сайдбар */
+  min-height: 100vh;
+  height: 100%;
+  background: #181818;
+  overflow: hidden;
+}
+/* Оформление сайдбара */
+.main__sidebar {
+  width: 244px;
+  min-width: 244px;
+  /* height: 100vh; можно добавить */
+  background: #181818;
+}
+
+/* Контент справа */
+.main-content {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 161px 0 283px; /* приятные отступы, можно 32px или 40px по вкусу */
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 1920px;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  background-color: #181818;
+}
+
+.main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.btn-text {
+  &:hover {
+    border-color: #d9b6ff;
+    color: #d9b6ff;
+    cursor: pointer;
+  }
+  &:active {
+    border-color: #ad61ff;
+    color: #ad61ff;
+    cursor: pointer;
+  }
+}
