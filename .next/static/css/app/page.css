@@ -1,0 +1,713 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./components/CenterTopBlock/CenterTopBlock.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.CenterTopBlock_centerblock__I_AD5 {
+  padding: 40px 24px 24px 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.CenterTopBlock_centerblock__search__oxDFw {
+  width: 100%;
+  border-bottom: 1px solid #4e4e4e;
+  margin-bottom: 51px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.CenterTopBlock_search__svg__sKrwv {
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+  stroke: #ffffff;
+  fill: transparent;
+}
+
+.CenterTopBlock_search__text__PrO9C {
+  flex-grow: 100;
+  background-color: transparent;
+  border: none;
+  padding: 13px 10px 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.CenterTopBlock_search__text__PrO9C::placeholder {
+  background-color: transparent;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.CenterTopBlock_centerblock__h2__He20o {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -0.8px;
+  margin-bottom: 45px;
+  color: #ffffff;
+}
+
+.CenterTopBlock_centerblock__filter__9cpa5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 51px;
+}
+
+.CenterTopBlock_filter__title__trIXr {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 15px;
+  color: #ffffff;
+}
+
+.CenterTopBlock_filter__button__HFnRZ {
+  /*composes: btn-text from '/src/UI/Button/button.module.css';*/
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #ffffff;
+  border-radius: 60px;
+  padding: 6px 20px;
+  color: #ffffff;
+}
+
+.CenterTopBlock_filter__button__HFnRZ:not(:last-child) {
+  margin-right: 10px;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./components/MainNavigation/MainNav.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.MainNav_main__nav__O0hgY {
+  height: 100vh;
+  background-color: rgb(28, 28, 28);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 0 0 36px;
+  position: relative;
+  z-index: 10;
+  min-width: 244px;
+  box-sizing: border-box;
+}
+
+.MainNav_menu__link__7eUN2 {
+  color: rgb(255, 255, 255);
+  font-family: StratosSkyeng;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.1%;
+  text-align: left;
+  text-decoration: none;
+}
+
+.MainNav_nav__logoWrap__S6hQk {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 36px;
+  gap: 22px;
+  flex-direction: column;
+}
+
+.MainNav_logo__image__DXXnH {
+  width: 113px;
+  height: 43px;
+  object-fit: contain;
+}
+
+.MainNav_nav__burger__1TZe_ {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  cursor: pointer;
+}
+
+.MainNav_burger__line__Qk319 {
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  display: block;
+}
+
+.MainNav_centerblock__search__zIaz8 {
+  width: 180px;
+  margin-bottom: 34px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.MainNav_search__svg__RLscm {
+  width: 17px;
+  height: 17px;
+  fill: #fff;
+  opacity: 0.7;
+}
+
+.MainNav_search__text__Dzr_g {
+  flex: 1 1;
+  background: transparent;
+  border: 1px solid #222;
+  border-radius: 4px;
+  height: 32px;
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 15px;
+  outline: none;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./components/SideBar/SideBar.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+.SideBar_main__sidebar__VhxMA {
+  max-width: 418px;
+  padding: 20px 92px 20px 0px;
+  z-index: 100;
+}
+
+.SideBar_sidebar__personal__rbvAV {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 12px 0 15px 0;
+}
+
+.SideBar_sidebar__personalName__0sD5R {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-right: 16px;
+}
+
+.SideBar_sidebar__icon__wreo_ {
+  width: 43px;
+  height: 43px;
+  background-color: #313131;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.SideBar_sidebar__block__7RYgv {
+  height: 100%;
+  padding: 240px 90px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.SideBar_sidebar__list__5jZpZ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SideBar_sidebar__item__HvqJz {
+  width: 250px;
+  height: 150px;
+  position: relative;
+  overflow: hidden; /* красиво обрежет края, если надо */
+}
+
+.SideBar_sidebar__item__HvqJz:not(:last-child) {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.SideBar_sidebar__img___xpiR {
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.SideBar_sidebar__link__xhHAz {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  display: block;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./components/Bar/Bar.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+.Bar_bar__PDYeb {
+  position: fixed; /* Было: absolute */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(24, 24, 24);
+  z-index: 1000; /* Чтобы бар был над контентом */
+}
+
+.Bar_bar__content__2rWLm {
+  display: flex;
+  flex-direction: column;
+}
+
+.Bar_bar__playerProgress__X3c25 {
+  width: 100%;
+  height: 5px;
+  background: #2e2e2e;
+}
+
+.Bar_bar__playerBlock__4V9my {
+  height: 73px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Bar_bar__player__2nPEu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Bar_bar__volumeBlock__dQ5WU {
+  width: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 92px 0 0;
+}
+
+.Bar_player__controls__HHc_p {
+  display: flex;
+  flex-direction: row;
+  padding: 0 27px 0 31px;
+}
+
+.Bar_player__btnPrev__Zj40M,
+.Bar_player__btnPlay__SNmnM,
+.Bar_player__btnNext__j0DKW,
+.Bar_player__btnRepeat___QICv,
+.Bar_player__btnShuffle__9fVzz {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.Bar_player__btnPrev__Zj40M {
+  margin-right: 23px;
+}
+
+.Bar_player__btnPrevSvg__9SOVo {
+  width: 15px;
+  height: 14px;
+}
+
+.Bar_player__btnPlay__SNmnM {
+  margin-right: 23px;
+}
+
+.Bar_player__btnPlaySvg__c9Nrp {
+  width: 22px;
+  height: 20px;
+  fill: #d9d9d9;
+}
+
+.Bar_player__btnNext__j0DKW {
+  margin-right: 28px;
+  fill: #a53939;
+}
+
+.Bar_player__btnNextSvg__gr08G {
+  width: 15px;
+  height: 14px;
+  fill: inherit;
+  stroke: #d9d9d9;
+}
+
+.Bar_player__btnRepeat___QICv {
+  margin-right: 24px;
+}
+
+.Bar_player__btnRepeatSvg__szpnC {
+  width: 18px;
+  height: 12px;
+  fill: transparent;
+  stroke: #696969;
+}
+
+.Bar_player__btnShuffle__9fVzz {
+  display: flex;
+  align-items: center;
+}
+
+.Bar_player__btnShuffleSvg__9BSzk {
+  width: 19px;
+  height: 12px;
+  fill: transparent;
+  stroke: #696969;
+}
+
+.Bar_player__trackPlay__hWxpg {
+  display: flex;
+  flex-direction: row;
+}
+
+.Bar_trackPlay__contain__sBkTZ {
+  width: auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "image author" "image album";
+  align-items: center;
+}
+
+.Bar_trackPlay__image__myLLY {
+  width: 51px;
+  height: 51px;
+  background-color: #313131;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-column: 1;
+  grid-area: image;
+}
+
+.Bar_trackPlay__svg__g7Nfy {
+  width: 18px;
+  height: 17px;
+  fill: transparent;
+  stroke: #4e4e4e;
+}
+
+.Bar_trackPlay__author__kjRtu {
+  grid-row: 1;
+  grid-column: 2;
+  grid-area: author;
+  min-width: 49px;
+}
+
+.Bar_trackPlay__authorLink__d1ddz {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.Bar_trackPlay__album__alvIU {
+  grid-row: 2;
+  grid-column: 2;
+  grid-area: album;
+  min-width: 49px;
+}
+
+.Bar_trackPlay__albumLink__R0bcG {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.Bar_trackPlay__likeDis__FWuZx {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 26%;
+}
+
+.Bar_trackPlay__like__omyFo,
+.Bar_trackPlay__dislike__S6MYi {
+  padding: 5px;
+}
+
+.Bar_trackPlay__likeSvg__FBmAO {
+  width: 14px;
+  height: 12px;
+  fill: transparent;
+  stroke: #696969;
+}
+
+.Bar_trackPlay__dislike__S6MYi {
+  margin-left: 28.5px;
+}
+
+.Bar_trackPlay__dislikeSvg__kAOvn {
+  width: 14.34px;
+  height: 13px;
+  fill: transparent;
+  stroke: #696969;
+}
+
+.Bar_volume__content__kl7ef {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Bar_volume__image__XWVuo {
+  width: 13px;
+  height: 18px;
+  margin-right: 17px;
+}
+
+.Bar_volume__svg__Y6c9K {
+  width: 13px;
+  height: 18px;
+  fill: transparent;
+}
+
+.Bar_volume__progress__8T3Tn {
+  width: 109px;
+  display: flex;
+  align-items: center;
+}
+
+.Bar_volume__progressLine__2SxIi {
+  width: 100%;
+  height: 2px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #797979;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.Bar_volume__progressLine__2SxIi::-webkit-slider-runnable-track {
+  height: 2px;
+  background: #797979;
+  border-radius: 5px;
+}
+
+.Bar_volume__progressLine__2SxIi::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #1a1a1a;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+  margin-top: -7px;
+}
+
+.Bar_btn__65n_N {
+  cursor: pointer;
+}
+
+.Bar_btnIcon__cnN4O:hover svg {
+  fill: transparent;
+  stroke: #acacac;
+  cursor: pointer;
+}
+
+.Bar_btnIcon__cnN4O:active svg {
+  fill: transparent;
+  stroke: #ffffff;
+  cursor: pointer;
+}
+
+.Bar_btnIcon__cnN4O:active .Bar_trackPlay__likeSvg__FBmAO,
+.Bar_btnIcon__cnN4O:active .Bar_trackPlay__dislikeSvg__kAOvn {
+  fill: #696969;
+  stroke: #ffffff;
+  cursor: pointer;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./components/CenterContent/CenterContent.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+.CenterContent_centerblock__content__zVFEI {
+  display: flex;
+  flex-direction: column;
+}
+
+.CenterContent_filter__title__CpLAR {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 15px;
+  color: #ffffff;
+}
+
+.CenterContent_filter__button__YrUQf {
+  /*composes: btn-text from '/src/UI/Button/button.module.css';*/
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #ffffff;
+  border-radius: 60px;
+  padding: 6px 20px;
+  color: #ffffff;
+}
+
+.CenterContent_filter__button__YrUQf:not(:last-child) {
+  margin-right: 10px;
+}
+
+.CenterContent_content__title__bLyj2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.CenterContent_content__playlist__4dUSS {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.CenterContent_playlistTitle__col__NdTDq {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #696969;
+  text-transform: uppercase;
+}
+
+.CenterContent_playlistTitle__svg__NFZZE {
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  stroke: #696969;
+}
+
+.CenterContent_col01__9j_DE {
+  width: 447px;
+}
+
+.CenterContent_col02__sVZMj {
+  width: 321px;
+}
+
+.CenterContent_col03__ooFGa {
+  width: 245px;
+}
+
+.CenterContent_col04___mLMh {
+  width: 60px;
+  text-align: end;
+}
+
+.CenterContent_playlist__item__Ugk3z {
+  width: 100%;
+  display: block;
+  margin-bottom: 12px;
+  height: auto; /* или наоборот */
+}
+
+.CenterContent_playlist__track__Et56P {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CenterContent_track__title__Hzi_I {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 447px;
+}
+
+.CenterContent_track__titleImage___qiTo {
+  width: 51px;
+  height: 51px;
+  padding: 16px;
+  background: #313131;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 17px;
+}
+
+.CenterContent_track__titleSvg__Nr9qh {
+  width: 18px;
+  height: 17px;
+  fill: transparent;
+  stroke: #4e4e4e;
+}
+
+.CenterContent_track__titleLink__cHG5r {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.CenterContent_track__titleSpan__97LLY {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4e4e4e;
+}
+
+.CenterContent_track__author__iMNia {
+  width: 321px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.CenterContent_track__authorLink__kB9qd {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.CenterContent_track__album__LvfLk {
+  width: 245px;
+}
+
+.CenterContent_track__albumLink__PK7_i {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #696969;
+}
+
+.CenterContent_track__timeSvg__hdnWS {
+  width: 14px;
+  height: 12px;
+  margin-right: 17px;
+  fill: transparent;
+  stroke: #696969;
+}
+
+.CenterContent_track__timeText__nL4B3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #696969;
+}
