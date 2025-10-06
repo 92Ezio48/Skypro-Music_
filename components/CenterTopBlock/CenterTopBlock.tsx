@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './CenterTopBlock.module.scss';
+import ContentFilter from '../ContentFilter/ContentFilter';
 export default function CenterTopBlock() {
   return (
     <div className={styles.centerblock}>
@@ -16,12 +17,7 @@ export default function CenterTopBlock() {
         />
       </div>
       <h2 className={styles.centerblock__h2}>Треки</h2>
-      <div className={styles.centerblock__filter}>
-        <div className={styles.filter__title}>Искать по:</div>
-        <div className={styles.filter__button}>исполнителю</div>
-        <div className={styles.filter__button}>году выпуска</div>
-        <div className={styles.filter__button}>жанру</div>
-      </div>
+      <ContentFilter />
 
       {/* centerblock__content */}
     </div>

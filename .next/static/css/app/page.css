@@ -54,15 +54,17 @@
   margin-bottom: 45px;
   color: #ffffff;
 }
-
-.CenterTopBlock_centerblock__filter__9cpa5 {
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./components/ContentFilter/ContentFilter.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ContentFilter_centerblock__filter__Q1rqX {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 51px;
 }
 
-.CenterTopBlock_filter__title__trIXr {
+.ContentFilter_filter__title__XQgk1 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -71,7 +73,7 @@
   color: #ffffff;
 }
 
-.CenterTopBlock_filter__button__HFnRZ {
+.ContentFilter_filter__button__9i8aA {
   /*composes: btn-text from '/src/UI/Button/button.module.css';*/
   font-style: normal;
   font-weight: 400;
@@ -83,7 +85,7 @@
   color: #ffffff;
 }
 
-.CenterTopBlock_filter__button__HFnRZ:not(:last-child) {
+.ContentFilter_filter__button__9i8aA:not(:last-child) {
   margin-right: 10px;
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -534,7 +536,6 @@
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./components/CenterContent/CenterContent.module.scss ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@charset "UTF-8";
 .CenterContent_centerblock__content__zVFEI {
   display: flex;
   flex-direction: column;
@@ -612,29 +613,32 @@
   width: 60px;
   text-align: end;
 }
-
-.CenterContent_playlist__item__Ugk3z {
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./components/PlaylistItem/PlaylistItem.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+.PlaylistItem_playlist__item__JGNiW {
   width: 100%;
   display: block;
   margin-bottom: 12px;
   height: auto; /* или наоборот */
 }
 
-.CenterContent_playlist__track__Et56P {
+.PlaylistItem_playlist__track__Hv4PN {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.CenterContent_track__title__Hzi_I {
+.PlaylistItem_track__title__rfn7y {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 447px;
 }
 
-.CenterContent_track__titleImage___qiTo {
+.PlaylistItem_track__titleImage__Bo9Aq {
   width: 51px;
   height: 51px;
   padding: 16px;
@@ -645,14 +649,14 @@
   margin-right: 17px;
 }
 
-.CenterContent_track__titleSvg__Nr9qh {
+.PlaylistItem_track__titleSvg__ok3ZI {
   width: 18px;
   height: 17px;
   fill: transparent;
   stroke: #4e4e4e;
 }
 
-.CenterContent_track__titleLink__cHG5r {
+.PlaylistItem_track__titleLink___GUGA {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -660,7 +664,7 @@
   color: #ffffff;
 }
 
-.CenterContent_track__titleSpan__97LLY {
+.PlaylistItem_track__titleSpan__DIJCu {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -668,13 +672,13 @@
   color: #4e4e4e;
 }
 
-.CenterContent_track__author__iMNia {
+.PlaylistItem_track__author__Hgqr0 {
   width: 321px;
   display: flex;
   justify-content: flex-start;
 }
 
-.CenterContent_track__authorLink__kB9qd {
+.PlaylistItem_track__authorLink__cJ341 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -683,11 +687,11 @@
   text-align: left;
 }
 
-.CenterContent_track__album__LvfLk {
+.PlaylistItem_track__album__bcEIV {
   width: 245px;
 }
 
-.CenterContent_track__albumLink__PK7_i {
+.PlaylistItem_track__albumLink__R2hN0 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -695,7 +699,7 @@
   color: #696969;
 }
 
-.CenterContent_track__timeSvg__hdnWS {
+.PlaylistItem_track__timeSvg__H6tKA {
   width: 14px;
   height: 12px;
   margin-right: 17px;
@@ -703,7 +707,7 @@
   stroke: #696969;
 }
 
-.CenterContent_track__timeText__nL4B3 {
+.PlaylistItem_track__timeText__svEw6 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
