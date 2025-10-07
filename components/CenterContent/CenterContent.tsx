@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './CenterContent.module.scss';
-import PlaylistItem from '../PlaylistItem/PlaylistItem';
+import Playlist from '../Playlist/Playlist';
 export default function CenterContent() {
   return (
     <div className={styles.centerblock__content}>
@@ -21,18 +21,7 @@ export default function CenterContent() {
           </svg>
         </div>
       </div>
-      <div className={styles.content__playlist}>
-        {/* ---- Трек 1 ---- */}
-        <PlaylistItem />
-        {/* ---- Трек 2 ---- */}
-        <PlaylistItem />
-        {/* ---- Трек 3 ---- */}
-        <PlaylistItem />
-        {/* ---- Трек 4 ---- */}
-        <PlaylistItem />
-        {/* ---- Трек 5 ---- */}
-        <PlaylistItem />
-      </div>
+      <Playlist />
       {/* content__playlist */}
     </div>
   );

@@ -50,16 +50,6 @@
   margin-bottom: 24px;
 }
 
-.content__playlist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow-y: auto;
-}
 
 .playlistTitle__col {
   font-style: normal;
