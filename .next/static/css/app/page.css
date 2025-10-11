@@ -19,11 +19,14 @@
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/components/ContentFilter/ContentFilter.module.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
 .ContentFilter_centerblock__filter__HBQWf {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 51px;
+  gap: 10px;
+  position: relative;
 }
 
 .ContentFilter_filter__title__LoZom {
@@ -36,7 +39,7 @@
 }
 
 .ContentFilter_filter__button__PsQj3 {
-  /*composes: btn-text from '/src/UI/Button/button.module.css';*/
+  position: relative;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -45,10 +48,70 @@
   border-radius: 60px;
   padding: 6px 20px;
   color: #ffffff;
+  background: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  z-index: 2;
+}
+.ContentFilter_filter__button__PsQj3:hover, .ContentFilter_filter__button__PsQj3.ContentFilter_active__iGO7o {
+  background: #333;
+  border-color: rgb(182, 114, 255);
+  color: rgb(182, 114, 255);
 }
 
 .ContentFilter_filter__button__PsQj3:not(:last-child) {
   margin-right: 10px;
+}
+
+/* Выпадающий список фильтра */
+.ContentFilter_filter__list__sCxYI {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: max-content;
+  min-width: 180px;
+  max-width: 248px;
+  max-height: 237px;
+  background: #252525;
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  padding: 12px 16px;
+  z-index: 10;
+}
+.ContentFilter_filter__list__sCxYI::-webkit-scrollbar {
+  width: 4px;
+}
+.ContentFilter_filter__list__sCxYI::-webkit-scrollbar-track {
+  background-color: rgb(75, 73, 73);
+}
+.ContentFilter_filter__list__sCxYI::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.ContentFilter_filter__item__Mi9Lo {
+  padding: 4px 0;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.ContentFilter_filter__item__Mi9Lo:hover {
+  background: #444444;
+  color: rgb(182, 114, 255);
+  text-decoration: underline;
+}
+
+/* Активная кнопка (можно использовать с classNames) */
+.ContentFilter_active__iGO7o {
+  background: #333;
+  border-color: #ffbe2f;
+  color: #ffbe2f;
 }
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/components/Playlist/Playlist.module.scss ***!

@@ -176,6 +176,22 @@ html,
   font-size: 15px;
   outline: none;
 }
+
+.MainNav_menu__list__TteXa {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.MainNav_menu__link__w6yFR {
+  color: rgb(255, 255, 255);
+  font-family: StratosSkyeng;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.1%;
+  text-align: left;
+}
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/components/SideBar/SideBar.module.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/

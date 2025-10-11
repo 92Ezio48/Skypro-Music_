@@ -47,6 +47,15 @@ export default function MainNav() {
               Выйти
             </Link>
           </p>
+          <Link href="/auth/signin" className={styles.menu__link}>
+            <Image
+              className={styles.menu__icon}
+              src="/img/nav_svg.svg"
+              width={39}
+              height={39}
+              alt="logo"
+            />
+          </Link>
         </div>
       </div>
     </nav>

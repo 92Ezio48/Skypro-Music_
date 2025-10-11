@@ -16,7 +16,6 @@ export default function Search({ title }: searchProp) {
       <svg className={styles.search__svg}>
         <use xlinkHref="/img/icon/sprite.svg#icon-search"></use>
       </svg>
-      {title}
       <input
         className={styles.search__text}
         type="search"

@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/layout",{
+
+/***/ "(app-pages-browser)/./src/components/MainNavigation/MainNav.module.scss":
+/*!***********************************************************!*\
+  !*** ./src/components/MainNavigation/MainNav.module.scss ***!
+  \***********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"main__nav\":\"MainNav_main__nav__mjLLE\",\"menu__link\":\"MainNav_menu__link__w6yFR\",\"nav__logoWrap\":\"MainNav_nav__logoWrap__4FScx\",\"logo__image\":\"MainNav_logo__image__jueO_\",\"nav__burger\":\"MainNav_nav__burger__iTWB_\",\"burger__line\":\"MainNav_burger__line__SMS2p\",\"centerblock__search\":\"MainNav_centerblock__search__utB2G\",\"search__svg\":\"MainNav_search__svg__wuf6j\",\"search__text\":\"MainNav_search__text__8RFUJ\",\"menu__list\":\"MainNav_menu__list__TteXa\",\"menu__icon\":\"MainNav_menu__icon__ICrlL\"};\n    if(true) {\n      // 1760178614534\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"887646b779a5\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3NyYy9jb21wb25lbnRzL01haW5OYXZpZ2F0aW9uL01haW5OYXYubW9kdWxlLnNjc3MiLCJtYXBwaW5ncyI6IkFBQUE7QUFDQSxrQkFBa0I7QUFDbEIsT0FBTyxJQUFVO0FBQ2pCO0FBQ0Esc0JBQXNCLG1CQUFPLENBQUMsd01BQXdJLGNBQWMsc0RBQXNEO0FBQzFPLE1BQU0sVUFBVTtBQUNoQjtBQUNBO0FBQ0E7QUFDQSx5QkFBeUIiLCJzb3VyY2VzIjpbIkY6XFxwcm9ncmFtbWluZ1xcUkVBQ1RcXEFkdl9SRUFDVFxcbXVzaWMtbWF0ZXJpYWwtbWFpblxcc3JjXFxjb21wb25lbnRzXFxNYWluTmF2aWdhdGlvblxcTWFpbk5hdi5tb2R1bGUuc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbm1vZHVsZS5leHBvcnRzID0ge1wibWFpbl9fbmF2XCI6XCJNYWluTmF2X21haW5fX25hdl9fbWpMTEVcIixcIm1lbnVfX2xpbmtcIjpcIk1haW5OYXZfbWVudV9fbGlua19fdzZ5RlJcIixcIm5hdl9fbG9nb1dyYXBcIjpcIk1haW5OYXZfbmF2X19sb2dvV3JhcF9fNEZTY3hcIixcImxvZ29fX2ltYWdlXCI6XCJNYWluTmF2X2xvZ29fX2ltYWdlX19qdWVPX1wiLFwibmF2X19idXJnZXJcIjpcIk1haW5OYXZfbmF2X19idXJnZXJfX2lUV0JfXCIsXCJidXJnZXJfX2xpbmVcIjpcIk1haW5OYXZfYnVyZ2VyX19saW5lX19TTVMycFwiLFwiY2VudGVyYmxvY2tfX3NlYXJjaFwiOlwiTWFpbk5hdl9jZW50ZXJibG9ja19fc2VhcmNoX191dEIyR1wiLFwic2VhcmNoX19zdmdcIjpcIk1haW5OYXZfc2VhcmNoX19zdmdfX3d1ZjZqXCIsXCJzZWFyY2hfX3RleHRcIjpcIk1haW5OYXZfc2VhcmNoX190ZXh0X184UkZVSlwiLFwibWVudV9fbGlzdFwiOlwiTWFpbk5hdl9tZW51X19saXN0X19UdGVYYVwiLFwibWVudV9faWNvblwiOlwiTWFpbk5hdl9tZW51X19pY29uX19JQ3JsTFwifTtcbiAgICBpZihtb2R1bGUuaG90KSB7XG4gICAgICAvLyAxNzYwMTc4NjE0NTM0XG4gICAgICB2YXIgY3NzUmVsb2FkID0gcmVxdWlyZShcIkY6L3Byb2dyYW1taW5nL1JFQUNUL0Fkdl9SRUFDVC9tdXNpYy1tYXRlcmlhbC1tYWluL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvY29tcGlsZWQvbWluaS1jc3MtZXh0cmFjdC1wbHVnaW4vaG1yL2hvdE1vZHVsZVJlcGxhY2VtZW50LmpzXCIpKG1vZHVsZS5pZCwge1wicHVibGljUGF0aFwiOlwiL19uZXh0L1wiLFwiZXNNb2R1bGVcIjpmYWxzZSxcImxvY2Fsc1wiOnRydWV9KTtcbiAgICAgIG1vZHVsZS5ob3QuZGlzcG9zZShjc3NSZWxvYWQpO1xuICAgICAgXG4gICAgfVxuICBcbm1vZHVsZS5leHBvcnRzLl9fY2hlY2tzdW0gPSBcIjg4NzY0NmI3NzlhNVwiXG4iXSwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(app-pages-browser)/./src/components/MainNavigation/MainNav.module.scss\n"));
+
+/***/ })
+
+});
