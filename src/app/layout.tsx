@@ -3,6 +3,7 @@ import './globals.css';
 import MainNav from '../components/MainNavigation/MainNav';
 import SideBar from '../components/SideBar/SideBar';
 import Bar from '../components/Bar/Bar';
+import ReduxProvider from '@/store/ReduxProvider';
 
 export const metadata = {
   title: 'Next.js',
@@ -13,14 +14,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="wrapper">
-          <div className="app-content">
-            <MainNav />
-            <main className="main-content">{children}</main>
-            <SideBar />
+        <ReduxProvider>
+          <div className="wrapper">
+            <div className="app-content">
+              <MainNav />
+              <main className="main-content">{children}</main>
+              <SideBar />
+            </div>
+            <Bar />
           </div>
-          <Bar />
-        </div>
+        </ReduxProvider>
       </body>
     </html>
   );

@@ -1,14 +1,20 @@
-import Image from 'next/image';
-import Link from 'next/link';
+'use client';
 import styles from './PlaylistItem.module.scss';
 import { data } from '@/data';
 import TrackType from '@/sharedTypes/sharedTypes'; // Импорт интерфейса!
 import { formatTime } from '@/utils/helper';
+import { useAppDispatch } from '@/store/store';
+import { setCurrentTrack } from '@/store/features/trackSlice';
 
 type PlaylistItemProps = {
   track: TrackType;
 };
 export default function PlaylistItem({ track }: PlaylistItemProps) {
+  const dispatch = useAppDispatch();
+
+  const onClickTrack = () => {
+    dispatch(setCurrentTrack(track));
+  };
   return (
     <div className={styles.playlist__item}>
       <div className={styles.playlist__track}>

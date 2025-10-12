@@ -90,179 +90,6 @@ html,
   }
 }
 
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/components/MainNavigation/MainNav.module.scss ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.MainNav_main__nav__mjLLE {
-  height: 100vh;
-  background-color: rgb(28, 28, 28);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 40px 0 0 36px;
-  position: relative;
-  z-index: 10;
-  min-width: 244px;
-  box-sizing: border-box;
-}
-
-.MainNav_menu__link__w6yFR {
-  color: rgb(255, 255, 255);
-  font-family: StratosSkyeng;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0.1%;
-  text-align: left;
-  text-decoration: none;
-}
-
-.MainNav_nav__logoWrap__4FScx {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-  margin-bottom: 36px;
-  gap: 22px;
-  flex-direction: column;
-}
-
-.MainNav_logo__image__jueO_ {
-  width: 113px;
-  height: 43px;
-  object-fit: contain;
-}
-
-.MainNav_nav__burger__iTWB_ {
-  width: 32px;
-  height: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 7px;
-  cursor: pointer;
-}
-
-.MainNav_burger__line__SMS2p {
-  height: 3px;
-  width: 100%;
-  background: #fff;
-  border-radius: 2px;
-  display: block;
-}
-
-.MainNav_centerblock__search__utB2G {
-  width: 180px;
-  margin-bottom: 34px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.MainNav_search__svg__wuf6j {
-  width: 17px;
-  height: 17px;
-  fill: #fff;
-  opacity: 0.7;
-}
-
-.MainNav_search__text__8RFUJ {
-  flex: 1 1;
-  background: transparent;
-  border: 1px solid #222;
-  border-radius: 4px;
-  height: 32px;
-  color: #fff;
-  padding: 4px 10px;
-  font-size: 15px;
-  outline: none;
-}
-
-.MainNav_menu__list__TteXa {
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-}
-
-.MainNav_menu__link__w6yFR {
-  color: rgb(255, 255, 255);
-  font-family: StratosSkyeng;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0.1%;
-  text-align: left;
-}
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/components/SideBar/SideBar.module.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@charset "UTF-8";
-.SideBar_main__sidebar__rWX8d {
-  max-width: 418px;
-  padding: 20px 92px 20px 0px;
-  z-index: 100;
-}
-
-.SideBar_sidebar__personal__XMijC {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 12px 0 15px 0;
-}
-
-.SideBar_sidebar__personalName__CPiTA {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #ffffff;
-  margin-right: 16px;
-}
-
-.SideBar_sidebar__icon__e9_yj {
-  width: 43px;
-  height: 43px;
-  background-color: #313131;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.SideBar_sidebar__block__PJ_Xe {
-  padding: 240px 90px 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.SideBar_sidebar__list__sTbro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.SideBar_sidebar__item__d2PjA {
-  width: 250px;
-  height: 150px;
-  position: relative;
-  overflow: hidden; /* красиво обрежет края, если надо */
-}
-
-.SideBar_sidebar__item__d2PjA:not(:last-child) {
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.SideBar_sidebar__img__vvydM {
-  object-fit: cover;
-  border-radius: 0px;
-}
-
-.SideBar_sidebar__link__A_Gsd {
-  position: relative;
-  width: 250px;
-  height: 150px;
-  display: block;
-}
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/components/Bar/Bar.module.scss ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -549,4 +376,177 @@ html,
   fill: #696969;
   stroke: #ffffff;
   cursor: pointer;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/components/MainNavigation/MainNav.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.MainNav_main__nav__mjLLE {
+  height: 100vh;
+  background-color: rgb(28, 28, 28);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 0 0 36px;
+  position: relative;
+  z-index: 10;
+  min-width: 244px;
+  box-sizing: border-box;
+}
+
+.MainNav_menu__link__w6yFR {
+  color: rgb(255, 255, 255);
+  font-family: StratosSkyeng;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.1%;
+  text-align: left;
+  text-decoration: none;
+}
+
+.MainNav_nav__logoWrap__4FScx {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 36px;
+  gap: 22px;
+  flex-direction: column;
+}
+
+.MainNav_logo__image__jueO_ {
+  width: 113px;
+  height: 43px;
+  object-fit: contain;
+}
+
+.MainNav_nav__burger__iTWB_ {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  cursor: pointer;
+}
+
+.MainNav_burger__line__SMS2p {
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  display: block;
+}
+
+.MainNav_centerblock__search__utB2G {
+  width: 180px;
+  margin-bottom: 34px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.MainNav_search__svg__wuf6j {
+  width: 17px;
+  height: 17px;
+  fill: #fff;
+  opacity: 0.7;
+}
+
+.MainNav_search__text__8RFUJ {
+  flex: 1 1;
+  background: transparent;
+  border: 1px solid #222;
+  border-radius: 4px;
+  height: 32px;
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.MainNav_menu__list__TteXa {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.MainNav_menu__link__w6yFR {
+  color: rgb(255, 255, 255);
+  font-family: StratosSkyeng;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.1%;
+  text-align: left;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/components/SideBar/SideBar.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+.SideBar_main__sidebar__rWX8d {
+  max-width: 418px;
+  padding: 20px 92px 20px 0px;
+  z-index: 100;
+}
+
+.SideBar_sidebar__personal__XMijC {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 12px 0 15px 0;
+}
+
+.SideBar_sidebar__personalName__CPiTA {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-right: 16px;
+}
+
+.SideBar_sidebar__icon__e9_yj {
+  width: 43px;
+  height: 43px;
+  background-color: #313131;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.SideBar_sidebar__block__PJ_Xe {
+  padding: 240px 90px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.SideBar_sidebar__list__sTbro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SideBar_sidebar__item__d2PjA {
+  width: 250px;
+  height: 150px;
+  position: relative;
+  overflow: hidden; /* красиво обрежет края, если надо */
+}
+
+.SideBar_sidebar__item__d2PjA:not(:last-child) {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.SideBar_sidebar__img__vvydM {
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.SideBar_sidebar__link__A_Gsd {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  display: block;
 }
