@@ -122,6 +122,7 @@
   flex: 1 1;
   overflow-y: auto;
   min-height: 0;
+  gap: 12px;
 }
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/components/PlaylistItem/PlaylistItem.module.scss ***!
@@ -132,6 +133,7 @@
   display: block;
   margin-bottom: 12px;
   height: auto; /* или наоборот */
+  text-decoration: none;
 }
 
 .PlaylistItem_playlist__track__WihZK {
@@ -139,6 +141,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
 }
 
 .PlaylistItem_track__title___mO_1 {
@@ -151,7 +154,6 @@
 .PlaylistItem_track__titleImage__axSts {
   width: 51px;
   height: 51px;
-  padding: 16px;
   background: #313131;
   display: flex;
   align-items: center;
@@ -172,6 +174,14 @@
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: StratosSkyeng;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.1%;
+  text-align: left;
 }
 
 .PlaylistItem_track__titleSpan__eONpq {
@@ -195,6 +205,14 @@
   line-height: 24px;
   color: #ffffff;
   text-align: left;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: StratosSkyeng;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.1%;
+  text-align: left;
 }
 
 .PlaylistItem_track__album__VghID {
@@ -207,6 +225,14 @@
   font-size: 16px;
   line-height: 24px;
   color: #696969;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: StratosSkyeng;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.1%;
+  text-align: left;
 }
 
 .PlaylistItem_track__timeSvg__8tYjB {
@@ -224,6 +250,18 @@
   line-height: 24px;
   text-align: right;
   color: #696969;
+  color: rgb(78, 78, 78);
+  font-family: StratosSkyeng;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.1%;
+  text-align: right;
+}
+
+.PlaylistItem_track__time__48_1g {
+  display: flex;
+  gap: 16px;
 }
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/components/CenterContent/CenterContent.module.scss ***!

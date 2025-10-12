@@ -1,81 +1,40 @@
 'use client';
-import React, { useState } from 'react';
-import classNames from 'classnames';
+import { useState } from 'react';
 import styles from './ContentFilter.module.scss';
-// Путь поправь, если data лежит в другом месте!
+import classNames from 'classnames';
 import { data } from '../../data';
+import { filtersConfig } from '../../filtersConfig.js';
+import FilterButton from '../FilterButton/FilterButton';
+
+function getFilterValues(data, filterKey) {
+  switch (filterKey) {
+    case 'artist':
+      return [...new Set(data.map((track) => track.author))];
+    case 'year':
+      return [...new Set(data.map((track) => track.release_date.slice(0, 4)))];
+    case 'genre':
+      return [...new Set(data.flatMap((track) => track.genre))];
+    default:
+      return [];
+  }
+}
 
 export default function ContentFilter() {
   const [activeFilter, setActiveFilter] = useState(null);
 
-  // Получаем уникальные значения
-  const artists = [...new Set(data.map((track) => track.author))];
-  const years = [
-    ...new Set(data.map((track) => track.release_date.slice(0, 4))),
-  ];
-  const genres = [...new Set(data.flatMap((track) => track.genre))];
-
   return (
     <div className={styles.centerblock__filter}>
       <div className={styles.filter__title}>Искать по:</div>
-
-      <div
-        className={classNames(styles.filter__button, {
-          [styles.active]: activeFilter === 'artist',
-        })}
-        onClick={() =>
-          setActiveFilter(activeFilter === 'artist' ? null : 'artist')
-        }
-      >
-        исполнителю
-        {activeFilter === 'artist' && (
-          <div className={styles.filter__list}>
-            {artists.map((artist) => (
-              <div className={styles.filter__item} key={artist}>
-                {artist}
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-
-      <div
-        className={classNames(styles.filter__button, {
-          [styles.active]: activeFilter === 'year',
-        })}
-        onClick={() => setActiveFilter(activeFilter === 'year' ? null : 'year')}
-      >
-        году выпуска
-        {activeFilter === 'year' && (
-          <div className={styles.filter__list}>
-            {years.map((year) => (
-              <div className={styles.filter__item} key={year}>
-                {year}
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-
-      <div
-        className={classNames(styles.filter__button, {
-          [styles.active]: activeFilter === 'genre',
-        })}
-        onClick={() =>
-          setActiveFilter(activeFilter === 'genre' ? null : 'genre')
-        }
-      >
-        жанру
-        {activeFilter === 'genre' && (
-          <div className={styles.filter__list}>
-            {genres.map((genre) => (
-              <div className={styles.filter__item} key={genre}>
-                {genre}
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
+      {filtersConfig.map((filter) => (
+        <FilterButton
+          key={filter.key}
+          label={filter.label}
+          filterKey={filter.key}
+          activeFilter={activeFilter}
+          setActiveFilter={setActiveFilter}
+          values={getFilterValues(data, filter.key)}
+        />
+      ))}
     </div>
   );
 }
