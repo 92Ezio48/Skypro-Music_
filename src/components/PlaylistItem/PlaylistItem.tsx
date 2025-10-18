@@ -1,22 +1,39 @@
 'use client';
 import styles from './PlaylistItem.module.scss';
-import { data } from '@/data';
-import TrackType from '@/sharedTypes/sharedTypes'; // Импорт интерфейса!
+import TrackType from '@/sharedTypes/sharedTypes';
 import { formatTime } from '@/utils/helper';
-import { useAppDispatch } from '@/store/store';
-import { setCurrentTrack } from '@/store/features/trackSlice';
+import { useAppDispatch, useAppSelector } from '@/store/store';
+import { setCurrentTrack, setIsPlay } from '@/store/features/trackSlice';
 
 type PlaylistItemProps = {
   track: TrackType;
 };
+
 export default function PlaylistItem({ track }: PlaylistItemProps) {
   const dispatch = useAppDispatch();
+  const currentTrack = useAppSelector((state) => state.tracks.currentTrack);
+  const isPlay = useAppSelector((state) => state.tracks.isPlay);
+  // Предполагается, что track.id уникальный! Замени на нужное поле, если иначе.
+  const isCurrent = currentTrack && currentTrack._id === track._id;
 
   const onClickTrack = () => {
-    dispatch(setCurrentTrack(track));
+    if (isCurrent) {
+      // Если выбран этот же трек — просто toggl'им паузу
+      dispatch(setIsPlay(!isPlay));
+    } else {
+      // Если другой — выбираем и сразу play
+      dispatch(setCurrentTrack(track));
+      dispatch(setIsPlay(true));
+    }
   };
+
   return (
-    <div className={styles.playlist__item}>
+    <div
+      className={styles.playlist__item}
+      onClick={onClickTrack}
+      style={{ cursor: 'pointer' }} // Для UX: подсказка, что элемент кликабелен
+      tabIndex={0} // Для доступности (можно нажать Enter/Space)
+    >
       <div className={styles.playlist__track}>
         <div className={styles.track__title}>
           <div className={styles.track__titleImage}>
@@ -25,20 +42,25 @@ export default function PlaylistItem({ track }: PlaylistItemProps) {
             </svg>
           </div>
           <div className={styles.track__title_text}>
-            <a className={styles.track__titleLink} href="">
+            <div className={styles.track__titleLink}>
               {track.name} <span className={styles.track__titleSpan}></span>
-            </a>
+              {isCurrent && (
+                <span
+                  className={
+                    isPlay
+                      ? styles.track__indicator_pulse // анимация
+                      : styles.track__indicator // статичная
+                  }
+                ></span>
+              )}
+            </div>
           </div>
         </div>
         <div className={styles.track__author}>
-          <a className={styles.track__authorLink} href="">
-            {track.author}
-          </a>
+          <div className={styles.track__authorLink}>{track.author}</div>
         </div>
         <div className={styles.track__album}>
-          <a className={styles.track__albumLink} href="">
-            {track.album}
-          </a>
+          <div className={styles.track__albumLink}>{track.album}</div>
         </div>
         <div className={styles.track__time}>
           <svg className={styles.track__timeSvg}>
