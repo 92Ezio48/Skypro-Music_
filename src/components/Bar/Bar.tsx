@@ -42,7 +42,7 @@ export default function Bar() {
   };
   return (
     <div className={styles.bar}>
-      <audio ref={audioRef} controls src={currentTrack?.track_file}></audio>
+      <audio ref={audioRef} src={currentTrack?.track_file}></audio>
       <div className={styles.bar__content}>
         <div className={styles.bar__playerProgress}></div>
         <div className={styles.bar__playerBlock}>

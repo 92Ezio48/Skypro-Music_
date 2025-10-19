@@ -173,13 +173,13 @@
 }
 
 .CenterContent_playlistTitle__col__VzEJ2 {
-  font-style: normal;
-  font-weight: 400;
+  color: rgb(78, 78, 78);
+  font-family: StratosSkyeng;
   font-size: 14px;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 2px;
-  color: #696969;
-  text-transform: uppercase;
+  text-align: left;
 }
 
 .CenterContent_playlistTitle__svg__DFF6W {
@@ -240,6 +240,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 17px;
+  position: relative;
 }
 
 .PlaylistItem_track__titleSvg__7Cmix {
@@ -301,18 +302,12 @@
 }
 
 .PlaylistItem_track__albumLink__hRUNB {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #696969;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(78, 78, 78);
   font-family: StratosSkyeng;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0.1%;
+  line-height: 24px;
+  letter-spacing: 2px;
   text-align: left;
 }
 
@@ -346,13 +341,15 @@
 }
 
 .PlaylistItem_track__indicator__zdEWJ, .PlaylistItem_track__indicator_pulse__juDjI {
-  display: inline-block;
-  margin-left: 8px;
-  width: 10px;
-  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  background: #a259f7;
-  vertical-align: middle;
+  background: #ad61ff;
+  z-index: 2;
 }
 
 .PlaylistItem_track__indicator_pulse__juDjI {

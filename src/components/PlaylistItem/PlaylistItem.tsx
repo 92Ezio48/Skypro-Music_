@@ -40,19 +40,19 @@ export default function PlaylistItem({ track }: PlaylistItemProps) {
             <svg className={styles.track__titleSvg}>
               <use xlinkHref="/img/icon/sprite.svg#icon-note"></use>
             </svg>
+            {isCurrent && (
+              <span
+                className={
+                  isPlay
+                    ? styles.track__indicator_pulse // анимация
+                    : styles.track__indicator // статичная
+                }
+              ></span>
+            )}
           </div>
           <div className={styles.track__title_text}>
             <div className={styles.track__titleLink}>
               {track.name} <span className={styles.track__titleSpan}></span>
-              {isCurrent && (
-                <span
-                  className={
-                    isPlay
-                      ? styles.track__indicator_pulse // анимация
-                      : styles.track__indicator // статичная
-                  }
-                ></span>
-              )}
             </div>
           </div>
         </div>
