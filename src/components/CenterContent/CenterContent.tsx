@@ -6,13 +6,13 @@ export default function CenterContent() {
     <div className={styles.centerblock__content}>
       <div className={styles.content__title}>
         <div className={`${styles.playlistTitle__col} ${styles.col01}`}>
-          Трек
+          ТРЕК
         </div>
         <div className={`${styles.playlistTitle__col} ${styles.col02}`}>
-          Исполнитель
+          ИСПОЛНИТЕЛЬ
         </div>
         <div className={`${styles.playlistTitle__col} ${styles.col03}`}>
-          Альбом
+          АЛЬБОМ
         </div>
         <div className={`${styles.playlistTitle__col} ${styles.col04}`}>
           <svg className={styles.playlistTitle__svg}>
