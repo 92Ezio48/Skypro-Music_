@@ -82,6 +82,7 @@
   overflow-y: auto;
   padding: 12px 16px;
   z-index: 10;
+  font-family: "Montserrat", sans-serif;
 }
 .ContentFilter_filter__list__sCxYI::-webkit-scrollbar {
   width: 4px;
@@ -100,6 +101,7 @@
   cursor: pointer;
   border-radius: 4px;
   transition: background 0.15s;
+  font-family: "Montserrat", sans-serif;
 }
 .ContentFilter_filter__item__Mi9Lo:hover {
   background: #444444;
@@ -174,7 +176,7 @@
 
 .CenterContent_playlistTitle__col__VzEJ2 {
   color: rgb(78, 78, 78);
-  font-family: StratosSkyeng;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -258,6 +260,7 @@
   color: #ffffff;
   text-decoration: none;
   color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -288,6 +291,7 @@
   text-align: left;
   text-decoration: none;
   color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -301,6 +305,7 @@
 
 .PlaylistItem_track__albumLink__hRUNB {
   color: rgb(78, 78, 78);
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;

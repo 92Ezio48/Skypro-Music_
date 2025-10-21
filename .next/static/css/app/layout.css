@@ -6,7 +6,7 @@
   padding: 0;
 }
 body {
-  font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 body,
 html,
@@ -472,7 +472,7 @@ html,
 
 .MainNav_menu__link__w6yFR {
   color: rgb(255, 255, 255);
-  font-family: StratosSkyeng;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
