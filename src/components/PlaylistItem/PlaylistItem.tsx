@@ -3,13 +3,18 @@ import styles from './PlaylistItem.module.scss';
 import TrackType from '@/sharedTypes/sharedTypes';
 import { formatTime } from '@/utils/helper';
 import { useAppDispatch, useAppSelector } from '@/store/store';
-import { setCurrentTrack, setIsPlay } from '@/store/features/trackSlice';
+import {
+  setCurrentPlaylist,
+  setCurrentTrack,
+  setIsPlay,
+} from '@/store/features/trackSlice';
 
 type PlaylistItemProps = {
   track: TrackType;
+  playlist: TrackType[];
 };
 
-export default function PlaylistItem({ track }: PlaylistItemProps) {
+export default function PlaylistItem({ track, playlist }: PlaylistItemProps) {
   const dispatch = useAppDispatch();
   const currentTrack = useAppSelector((state) => state.tracks.currentTrack);
   const isPlay = useAppSelector((state) => state.tracks.isPlay);
@@ -24,6 +29,7 @@ export default function PlaylistItem({ track }: PlaylistItemProps) {
       // Если другой — выбираем и сразу play
       dispatch(setCurrentTrack(track));
       dispatch(setIsPlay(true));
+      dispatch(setCurrentPlaylist(playlist));
     }
   };
 

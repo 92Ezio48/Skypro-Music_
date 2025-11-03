@@ -608,6 +608,133 @@ html,
   stroke: #ffffff;
   cursor: pointer;
 }
+
+.Bar_player__btnRepeat__CcGcn {
+  transition: color 0.25s;
+}
+
+.Bar_player__btnRepeat__CcGcn svg {
+  stroke: #acacac;
+  fill: none;
+  transition: stroke 0.25s, fill 0.25s;
+}
+
+/* Актив - перекрасить svg */
+.Bar_player__btnRepeat__CcGcn.Bar_active__AzyC4 svg {
+  stroke: white;
+  fill: none;
+}
+
+.Bar_player__btnShuffle__AU9N8 {
+  transition: color 0.25s;
+}
+
+.Bar_player__btnShuffle__AU9N8 svg {
+  stroke: #acacac;
+  fill: none;
+  transition: stroke 0.25s, fill 0.25s;
+}
+
+.Bar_player__btnShuffle__AU9N8.Bar_active__AzyC4 svg {
+  stroke: white;
+  fill: none;
+}
+
+.Bar_barWrap___kyJo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Bar_bar__loader__97Q2r {
+  position: absolute;
+  top: 800px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 12px;
+  margin-bottom: 5px;
+  z-index: 99999;
+}
+
+.Bar_bar__wLDjE {
+  position: absolute;
+}
+
+.Bar_bar__timeBlock__Y9aGA {
+  position: absolute;
+  right: 24px;
+  bottom: 100px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 3px 10px;
+  border-radius: 7px;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  z-index: 99999;
+  pointer-events: none;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/components/ProgressBar/progressBar.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.progressBar_styledProgressInput__DA50X {
+  --progress-height: 5px;
+  --progress-color: #b672ff;
+  --progress-bg-color: #2e2e2e;
+  margin: 0;
+  width: 100%;
+  height: var(--progress-height);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.progressBar_styledProgressInput__DA50X:hover {
+  --progress-height: 8px;
+}
+
+.progressBar_styledProgressInput__DA50X::-webkit-slider-runnable-track {
+  position: relative;
+  height: var(--progress-height);
+  background: var(--progress-bg-color);
+}
+
+.progressBar_styledProgressInput__DA50X::-webkit-slider-thumb {
+  --thumb-height: 10px;
+  --thumb-width: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--thumb-width);
+  height: var(--thumb-height);
+  background-color: var(--progress-color);
+  border-radius: 50%;
+  position: relative;
+  box-shadow: -100vmax 0 0 100vmax var(--progress-color);
+}
+
+.progressBar_styledProgressInput__DA50X::-moz-range-track {
+  width: 100%;
+  height: var(--progress-height);
+  background: var(--progress-bg-color);
+}
+
+.progressBar_styledProgressInput__DA50X::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--progress-color);
+  border: none;
+}
+
+.progressBar_styledProgressInput__DA50X::-moz-range-progress {
+  background-color: var(--progress-color);
+  height: var(--progress-height);
+}
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/components/MainNavigation/MainNav.module.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
