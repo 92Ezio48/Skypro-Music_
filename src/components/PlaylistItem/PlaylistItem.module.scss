@@ -50,6 +50,7 @@
   -ms-flex-pack: center;
   justify-content: center;
   margin-right: 17px;
+  position: relative;
 }
 
 .track__titleSvg {
@@ -67,7 +68,7 @@
   color: #ffffff;
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
-  font-family: StratosSkyeng;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -102,7 +103,7 @@
   text-align: left;
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
-  font-family: StratosSkyeng;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -115,18 +116,12 @@
 }
 
 .track__albumLink {
-  font-style: normal;
+  color: rgba(78, 78, 78, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
   font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
-  color: #696969;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 1);
-  font-family: StratosSkyeng;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0.1%;
+  letter-spacing: 2px;
   text-align: left;
 }
 
@@ -156,4 +151,32 @@
 .track__time {
   display: flex;
   gap: 16px;
+}
+.track__indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px; // отрегулируй по макету
+  height: 16px;
+  border-radius: 50%;
+  background: #ad61ff; // фирменный фиолетовый
+  z-index: 2;
+}
+
+.track__indicator_pulse {
+  @extend .track__indicator;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(162, 89, 247, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(162, 89, 247, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(162, 89, 247, 0);
+  }
 }
