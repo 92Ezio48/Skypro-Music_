@@ -8,7 +8,7 @@ export default function Playlist() {
     <div className={styles.content__playlist}>
       {data.map((track) => (
         //* ---- Трек 1 ---- *
-        <PlaylistItem key={track._id} track={track} />
+        <PlaylistItem key={track._id} track={track} playlist={data} />
       ))}
     </div>
   );
