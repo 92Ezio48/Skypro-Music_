@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './404.module.scss'; // стили отдельным файлом
+import styles from './not-found.module.scss'; // стили отдельным файлом
 
 export default function NotFound() {
   return (

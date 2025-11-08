@@ -1,13 +1,28 @@
 'use client';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './MainNav.module.scss';
 
 export default function MainNav() {
+  const router = useRouter();
   // Если бургер нужен только на мобилке, можно добавить window.matchMedia…
   const [open, setOpen] = useState(false);
+  const handleLogout = () => {
+    // 1. Очистить localStorage/sessionStorage (или где хранишь токены)
+    localStorage.removeItem('access_token'); // если хранишь токен так
+    localStorage.removeItem('refresh_token'); // если хранишь refresh
 
+    // Если используешь sessionStorage
+    sessionStorage.clear();
+
+    // 2. Можно добавить сброс редакса/состояния пользователя (если используешь Redux)
+    // dispatch(logoutUser());
+
+    // 3. Редиректим на страницу входа
+    router.push('/auth/signin');
+  };
   return (
     <nav className={styles.main__nav}>
       <div className={styles.nav__logoWrap}>
@@ -43,9 +58,19 @@ export default function MainNav() {
             </a>
           </p>
           <p className={styles.menu__item}>
-            <Link href="/auth/signin" className={styles.menu__link}>
+            <button
+              className={styles.menu__link}
+              style={{
+                background: 'none',
+                border: 'none',
+                padding: 0,
+                margin: 0,
+                cursor: 'pointer',
+              }}
+              onClick={handleLogout}
+            >
               Выйти
-            </Link>
+            </button>
           </p>
           <Link href="/auth/signin" className={styles.menu__link}>
             <Image

@@ -1,13 +1,15 @@
 .content__playlist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   flex: 1 1 0;
-  overflow-y: auto;
-  min-height: 0;
-  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* ВЕРТИКАЛЬНАЯ прокрутка */
+  overflow-x: hidden; /* ГОРИЗОНТАЛЬНУЮ отключаем */
+  min-height: 0; /* ОБЯЗАТЕЛЬНО для flex! */
+  min-width: 0; /* ОБЯЗАТЕЛЬНО для flex! */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE, Edge */
+}
+.content__playlist::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }
