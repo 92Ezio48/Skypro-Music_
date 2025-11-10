@@ -3,11 +3,14 @@ import Link from 'next/link';
 import styles from './CenterTopBlock.module.scss';
 import ContentFilter from '../ContentFilter/ContentFilter';
 import Search from '../Search/Search';
-export default function CenterTopBlock() {
+type CenterTopBlockProps = {
+  title: string;
+};
+export default function CenterTopBlock({ title }: CenterTopBlockProps) {
   return (
     <div className={styles.centerblock}>
-      <Search title='Заголовок'/>
-      <h2 className={styles.centerblock__h2}>Треки</h2>
+      <Search title="Заголовок" />
+      <h2 className={styles.centerblock__h2}>{title}</h2>
       <ContentFilter />
 
       {/* centerblock__content */}

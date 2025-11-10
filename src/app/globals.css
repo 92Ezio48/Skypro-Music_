@@ -4,92 +4,22 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
+  background: #181818;
+  /* и другие глобальные настройки */
+}
+html,
+body {
+  min-height: 100vh;
+  height: 100%;
 }
 body,
-html,
-#__next,
-.wrapper {
-  height: 100%;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  background: #181818;
+html {
+  overflow-y: auto; /* или scroll, если всегда должен быть, но не auto */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
 }
-.wrapper {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #383838;
-}
-.app-content {
-  display: grid;
-  grid-template-columns: 60px 1fr 244px; /* 60px = узкий левый бар! 244px = сайдбар */
-  min-height: 0;
-
-  background: #181818;
-}
-/* Оформление сайдбара */
-.main__sidebar {
-  width: 244px;
-  min-width: 244px;
-  /* height: 100vh; можно добавить */
-  background: #181818;
-  min-height: 100vh;
-}
-
-/* Контент справа */
-.main-content {
-  min-width: 0;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0px 161px 0 283px; /* приятные отступы, можно 32px или 40px по вкусу */
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 0px);
-  min-height: 0;
-}
-.center-top-block {
-  flex: 0 0 auto;
-  /* Можешь добавить border-bottom или background по желанию */
-}
-/* Сам плейлист (ТОЛЬКО он скроллится!) */
-.content__playlist {
-  flex: 1 1 0;
-  min-height: 0;
-  overflow-y: auto;
-  padding-bottom: 80px; /* чтобы последний трек не был под баром */
-  background: #181818;
-}
-.container {
-  max-width: 1920px;
-  height: 100vh;
-  margin: 0 auto;
-  position: relative;
-  background-color: #181818;
-}
-
-.main {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.btn-text {
-  &:hover {
-    border-color: #d9b6ff;
-    color: #d9b6ff;
-    cursor: pointer;
-  }
-  &:active {
-    border-color: #ad61ff;
-    color: #ad61ff;
-    cursor: pointer;
-  }
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  width: 0 !important; /* Chrome/Safari/Opera */
+  background: transparent;
 }

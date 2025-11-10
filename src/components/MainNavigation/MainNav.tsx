@@ -1,13 +1,35 @@
 'use client';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './MainNav.module.scss';
 
 export default function MainNav() {
+  const router = useRouter();
   // Если бургер нужен только на мобилке, можно добавить window.matchMedia…
   const [open, setOpen] = useState(false);
+  const handleLogout = () => {
+    // 1. Очищаем ВСЁ, что хранит информацию о пользователе
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('refresh_token');
+    // Если ты хранишь данные пользователя отдельным ключом, удали и его!
+    localStorage.removeItem('user');
+    // Если дополнительно используешь sessionStorage для токенов:
+    sessionStorage.removeItem('access_token');
+    sessionStorage.removeItem('refresh_token');
+    sessionStorage.removeItem('user');
 
+    // 2. Можно: очищать вообще всё (если уверен, что ничего лишнего нет)
+    // localStorage.clear();
+    // sessionStorage.clear();
+
+    // 3. (Опционально) сбрось состояние пользователя в сторе (Redux/Context, если юзаешь)
+    // dispatch(logoutUser());
+
+    // 4. Редиректим на страницу входа
+    router.push('/auth/signin');
+  };
   return (
     <nav className={styles.main__nav}>
       <div className={styles.nav__logoWrap}>
@@ -43,9 +65,19 @@ export default function MainNav() {
             </a>
           </p>
           <p className={styles.menu__item}>
-            <Link href="/auth/signin" className={styles.menu__link}>
+            <button
+              className={styles.menu__link}
+              style={{
+                background: 'none',
+                border: 'none',
+                padding: 0,
+                margin: 0,
+                cursor: 'pointer',
+              }}
+              onClick={handleLogout}
+            >
               Выйти
-            </Link>
+            </button>
           </p>
           <Link href="/auth/signin" className={styles.menu__link}>
             <Image
