@@ -10,17 +10,24 @@ export default function MainNav() {
   // Если бургер нужен только на мобилке, можно добавить window.matchMedia…
   const [open, setOpen] = useState(false);
   const handleLogout = () => {
-    // 1. Очистить localStorage/sessionStorage (или где хранишь токены)
-    localStorage.removeItem('access_token'); // если хранишь токен так
-    localStorage.removeItem('refresh_token'); // если хранишь refresh
+    // 1. Очищаем ВСЁ, что хранит информацию о пользователе
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('refresh_token');
+    // Если ты хранишь данные пользователя отдельным ключом, удали и его!
+    localStorage.removeItem('user');
+    // Если дополнительно используешь sessionStorage для токенов:
+    sessionStorage.removeItem('access_token');
+    sessionStorage.removeItem('refresh_token');
+    sessionStorage.removeItem('user');
 
-    // Если используешь sessionStorage
-    sessionStorage.clear();
+    // 2. Можно: очищать вообще всё (если уверен, что ничего лишнего нет)
+    // localStorage.clear();
+    // sessionStorage.clear();
 
-    // 2. Можно добавить сброс редакса/состояния пользователя (если используешь Redux)
+    // 3. (Опционально) сбрось состояние пользователя в сторе (Redux/Context, если юзаешь)
     // dispatch(logoutUser());
 
-    // 3. Редиректим на страницу входа
+    // 4. Редиректим на страницу входа
     router.push('/auth/signin');
   };
   return (
