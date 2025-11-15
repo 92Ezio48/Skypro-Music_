@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { BASE_URL } from '../constants';
+import { createUserProp } from './types';
 
 type authUserProps = {
   email: string;
@@ -48,4 +49,22 @@ export const registerUser = (
       },
     },
   );
+};
+
+type accessTokenType = {
+  access: string;
+};
+type refreshTokenType = {
+  refresh: string;
+};
+
+type tokensType = accessTokenType & refreshTokenType;
+
+export const getTokens = (data: createUserProp): Promise<tokensType> => {
+  return axios.post(BASE_URL + '/user/token/', data).then((res) => res.data);
+};
+export const refreshToken = (refresh: string): Promise<tokensType> => {
+  return axios
+    .post(BASE_URL + '/user/token/refresh', { refresh })
+    .then((res) => res.data);
 };

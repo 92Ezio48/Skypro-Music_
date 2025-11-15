@@ -8,6 +8,7 @@ import {
   setCurrentTrack,
   setIsPlay,
 } from '@/store/features/trackSlice';
+import { useLikeTrack } from '@/hooks/useLikeTracks';
 
 type PlaylistItemProps = {
   track: TrackType;
@@ -20,6 +21,7 @@ export default function PlaylistItem({ track, playlist }: PlaylistItemProps) {
   const isPlay = useAppSelector((state) => state.tracks.isPlay);
   // Предполагается, что track.id уникальный! Замени на нужное поле, если иначе.
   const isCurrent = currentTrack && currentTrack._id === track._id;
+  const { toggleLike, isLike } = useLikeTrack(track);
 
   const onClickTrack = () => {
     if (isCurrent) {
@@ -69,8 +71,18 @@ export default function PlaylistItem({ track, playlist }: PlaylistItemProps) {
           <div className={styles.track__albumLink}>{track.album}</div>
         </div>
         <div className={styles.track__time}>
-          <svg className={styles.track__timeSvg}>
-            <use xlinkHref="/img/icon/sprite.svg#icon-like"></use>
+          <svg
+            className={styles.track__timeSvg}
+            onClick={(e) => {
+              e.stopPropagation(); // <-- ВАЖНО!
+              toggleLike();
+            }}
+          >
+            <use
+              xlinkHref={`/img/icon/sprite.svg#${
+                isLike ? 'icon-like' : 'icon-dislike'
+              }`}
+            ></use>
           </svg>
           <span className={styles.track__timeText}>
             {formatTime(track.duration_in_seconds)}

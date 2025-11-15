@@ -9,4 +9,5 @@ export default interface TrackType {
   logo: string | null;
   track_file: string;
   stared_user: any[]; // <--- Если знаешь тип пользователей, укажи, например, string[] или User[]
+  categoryId: number;
 }

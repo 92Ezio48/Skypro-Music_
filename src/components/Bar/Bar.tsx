@@ -87,12 +87,10 @@ export default function Bar() {
       setCurrentTime(audioRef.current.currentTime);
       // console.log(audioRef.current.currentTime);
       // console.log(audioRef.current.duration);
-      console.log(audioRef.current.volume);
     }
   };
 
   const onLoadedMetadata = () => {
-    console.log(`Start`);
     if (audioRef.current) {
       setDuration(audioRef.current.duration);
       audioRef.current.play();
@@ -256,7 +254,6 @@ export default function Bar() {
                       setVolume(Number(e.target.value));
                       if (audioRef.current)
                         audioRef.current.volume = Number(e.target.value) / 100;
-                      console.log(Number(e.target.value));
                     }}
                   />
                 </div>

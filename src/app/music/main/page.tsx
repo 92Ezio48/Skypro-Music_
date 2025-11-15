@@ -6,10 +6,14 @@ import { useEffect, useState } from 'react';
 import { getTracks } from '@/services/tracks/tracksApi';
 import TrackType from '@/sharedTypes/sharedTypes';
 import { AxiosError } from 'axios';
+import { useAppSelector } from '@/store/store';
 
 export default function Home() {
   const [tracks, setTracks] = useState<TrackType[]>([]);
   const [error, setError] = useState('');
+  const { fetchError, fetchIsLoading, allTracks } = useAppSelector(
+    (state) => state.tracks,
+  );
 
   useEffect(() => {
     getTracks()
@@ -38,7 +42,12 @@ export default function Home() {
         <CenterTopBlock title="Главное" />
       </div>
       <div className={styles.contentPlaylist}>
-        <CenterContent />
+        <CenterContent
+          tracks={allTracks}
+          isLoading={fetchIsLoading}
+          errorRes={fetchError}
+          title={'Треки'}
+        />
       </div>
     </>
   );
