@@ -19,7 +19,6 @@ export default function Home() {
     getTracks()
       .then((res) => {
         setTracks(res);
-        alert('res');
       })
       .catch((error) => {
         if (error instanceof AxiosError) {
