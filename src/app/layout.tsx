@@ -1,6 +1,7 @@
 import { Montserrat } from 'next/font/google';
 import './globals.css';
 import ReduxProvider from '@/store/ReduxProvider';
+import FavoriteTracksSync from '@/components/FavoriteTracksSync/FavotiteTracksSync';
 
 const montserrat = Montserrat({
   subsets: ['latin', 'cyrillic'], // добавь cyrillic, если нужна кириллица!
@@ -14,7 +15,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ReduxProvider>
+          <FavoriteTracksSync />
+          {children}
+        </ReduxProvider>
+      </body>
     </html>
   );
 }

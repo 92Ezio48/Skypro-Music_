@@ -1,7 +1,21 @@
+import TrackType from '@/sharedTypes/sharedTypes';
 import Playlist from '../Playlist/Playlist';
 import styles from './CenterContent.module.scss';
+import classNames from 'classnames';
 
-export default function CenterContent() {
+type centerBlockProp = {
+  tracks: TrackType[];
+  isLoading: boolean;
+  errorRes: string | null;
+  title: string;
+};
+
+export default function CenterContent({
+  tracks,
+  isLoading,
+  errorRes,
+  title,
+}: centerBlockProp) {
   return (
     <div className={styles.centerblock__content}>
       <div className={styles.content__title}>
@@ -21,9 +35,14 @@ export default function CenterContent() {
         </div>
       </div>
       <div className={styles.playlist__scroll}>
-        {' '}
         {/* Добавленный внутренний flex-скроллер */}
-        <Playlist />
+        {errorRes ? (
+          errorRes
+        ) : isLoading ? (
+          'Загрузка'
+        ) : (
+          <Playlist tracks={tracks} />
+        )}
       </div>
     </div>
   );

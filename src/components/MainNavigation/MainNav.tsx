@@ -1,34 +1,30 @@
 'use client';
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './MainNav.module.scss';
+import { useAppDispatch, useAppSelector } from '@/store/store';
+import { clearUser } from '@/store/features/authSlice';
+import { withReauth } from '@/utils/withReAuth';
+import { getTracks } from '@/services/tracks/tracksApi';
 
 export default function MainNav() {
-  const router = useRouter();
-  // Если бургер нужен только на мобилке, можно добавить window.matchMedia…
+  const dispatch = useAppDispatch();
   const [open, setOpen] = useState(false);
-  const handleLogout = () => {
-    // 1. Очищаем ВСЁ, что хранит информацию о пользователе
-    localStorage.removeItem('access_token');
-    localStorage.removeItem('refresh_token');
-    // Если ты хранишь данные пользователя отдельным ключом, удали и его!
-    localStorage.removeItem('user');
-    // Если дополнительно используешь sessionStorage для токенов:
-    sessionStorage.removeItem('access_token');
-    sessionStorage.removeItem('refresh_token');
-    sessionStorage.removeItem('user');
+  const username = useAppSelector((state) => state.auth.username);
+  const isAuth = !!username; // авторизован, если есть имя
+  const router = useRouter();
+  const pathname = usePathname();
+  // Если бургер нужен только на мобилке, можно добавить window.matchMedia…
 
-    // 2. Можно: очищать вообще всё (если уверен, что ничего лишнего нет)
-    // localStorage.clear();
-    // sessionStorage.clear();
+  const logout = () => {
+    dispatch(clearUser());
 
-    // 3. (Опционально) сбрось состояние пользователя в сторе (Redux/Context, если юзаешь)
-    // dispatch(logoutUser());
-
-    // 4. Редиректим на страницу входа
-    router.push('/auth/signin');
+    // Если на избранных треках — редирект на главную
+    if (pathname === '/music/favorite') {
+      router.push('/');
+    }
   };
   return (
     <nav className={styles.main__nav}>
@@ -59,35 +55,39 @@ export default function MainNav() {
               Главное
             </Link>
           </p>
-          <p className={styles.menu__item}>
-            <a href="#" className={styles.menu__link}>
-              Мой плейлист
-            </a>
-          </p>
-          <p className={styles.menu__item}>
-            <button
-              className={styles.menu__link}
-              style={{
-                background: 'none',
-                border: 'none',
-                padding: 0,
-                margin: 0,
-                cursor: 'pointer',
-              }}
-              onClick={handleLogout}
-            >
-              Выйти
-            </button>
-          </p>
-          <Link href="/auth/signin" className={styles.menu__link}>
-            <Image
-              className={styles.menu__icon}
-              src="/img/nav_svg.svg"
-              width={39}
-              height={39}
-              alt="logo"
-            />
-          </Link>
+          {/* Только если залогинен — отображаем плейлист и Выйти */}
+          {isAuth && (
+            <>
+              <p className={styles.menu__item}>
+                <Link href="/music/favorite" className={styles.menu__link}>
+                  Мой плейлист
+                </Link>
+              </p>
+              <p className={styles.menu__item}>
+                <button
+                  className={styles.menu__link}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    margin: 0,
+                    cursor: 'pointer',
+                  }}
+                  onClick={logout}
+                >
+                  Выйти
+                </button>
+              </p>
+            </>
+          )}
+          {/* Если НЕ залогинен — показывай "Войти" */}
+          {!isAuth && (
+            <p className={styles.menu__item}>
+              <Link href="/auth/signin" className={styles.menu__link}>
+                Войти
+              </Link>
+            </p>
+          )}
         </div>
       </div>
     </nav>

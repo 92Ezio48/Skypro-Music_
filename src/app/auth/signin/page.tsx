@@ -4,10 +4,17 @@ import styles from './signin.module.css';
 import classNames from 'classnames';
 import Link from 'next/link';
 import { ChangeEvent, useState } from 'react';
-import { authUser } from '@/services/auth/authApi';
+import { authUser, getTokens } from '@/services/auth/authApi';
 import { AxiosError } from 'axios';
+import { useAppDispatch } from '@/store/store';
+import {
+  setAccessToken,
+  setRefreshToken,
+  setUsername,
+} from '@/store/features/authSlice';
 
 export default function Signin() {
+  const dispatch = useAppDispatch();
   const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -29,8 +36,14 @@ export default function Signin() {
     setIsLoading(true);
 
     authUser({ email, password })
+      .then(() => {
+        dispatch(setUsername(email));
+        return getTokens({ email, password });
+      })
       .then((res) => {
         console.log(res);
+        dispatch(setAccessToken(res.access));
+        dispatch(setRefreshToken(res.refresh));
         router.push('/music/main');
       })
       .catch((error) => {

@@ -9,6 +9,8 @@ import {
   toggleShuffle,
 } from '@/store/features/trackSlice';
 import ProgressBar from '../ProgressBar/ProgressBar';
+import { useLikeTrack } from '@/hooks/useLikeTracks';
+
 export default function Bar() {
   const currentTrack = useAppSelector((state) => state.tracks.currentTrack);
   const isPlay = useAppSelector((state) => state.tracks.isPlay);
@@ -21,6 +23,29 @@ export default function Bar() {
   const [isLoadedTrack, setIsLoadedTrack] = useState(false);
   const isShuffle = useAppSelector((state) => state.tracks.isShuffle);
   const [isTrackLoading, setIsTrackLoading] = useState(false);
+
+  const { isLike, toggleLike } = useLikeTrack(currentTrack);
+  const isAuth = useAppSelector((state) => state.auth.access);
+
+  let iconName = 'icon-dislike';
+  let iconStyle = {};
+
+  if (isAuth) {
+    iconName = 'icon-like';
+    iconStyle = { stroke: '#696969', fill: 'none' }; // Серый неактивный
+    if (isLike) {
+      iconStyle = {
+        stroke: 'rgba(182, 114, 255, 1)',
+      }; // Фиолетовый активный
+    }
+  }
+
+  const handleLikeBarClick = (e) => {
+    e.stopPropagation();
+    if (isAuth) {
+      toggleLike();
+    }
+  };
 
   const onPrevTrack = () => {
     dispatch(setPrevTrack());
@@ -87,12 +112,10 @@ export default function Bar() {
       setCurrentTime(audioRef.current.currentTime);
       // console.log(audioRef.current.currentTime);
       // console.log(audioRef.current.duration);
-      console.log(audioRef.current.volume);
     }
   };
 
   const onLoadedMetadata = () => {
-    console.log(`Start`);
     if (audioRef.current) {
       setDuration(audioRef.current.duration);
       audioRef.current.play();
@@ -224,17 +247,14 @@ export default function Bar() {
                 </div>
                 <div className={styles.trackPlay__dislike}>
                   <div
-                    className={`${styles.player__btnShuffle} ${styles.btnIcon}`}
+                    className={styles.trackPlay__likeBtn}
+                    onClick={handleLikeBarClick}
                   >
-                    <svg className={styles.trackPlay__likeSvg}>
-                      <use xlinkHref="/img/icon/sprite.svg#icon-like"></use>
-                    </svg>
-                  </div>
-                  <div
-                    className={`${styles.trackPlay__dislike} ${styles.btnIcon}`}
-                  >
-                    <svg className={styles.trackPlay__dislikeSvg}>
-                      <use xlinkHref="/img/icon/sprite.svg#icon-dislike"></use>
+                    <svg
+                      className={styles.trackPlay__likeSvg}
+                      style={iconStyle}
+                    >
+                      <use xlinkHref={`/img/icon/sprite.svg#${iconName}`}></use>
                     </svg>
                   </div>
                 </div>
@@ -256,7 +276,6 @@ export default function Bar() {
                       setVolume(Number(e.target.value));
                       if (audioRef.current)
                         audioRef.current.volume = Number(e.target.value) / 100;
-                      console.log(Number(e.target.value));
                     }}
                   />
                 </div>
