@@ -49,10 +49,7 @@ export default function SignUp() {
 
     // Вызов API регистрации
     registerUser({ email, username, password })
-      .then((res) => {
-        // Можно добавить редирект или показать "успех"
-        // Например, window.location.href = "/auth/signin";
-      })
+      .then((res) => {})
       .catch((error) => {
         if (error instanceof AxiosError && error.response) {
           setErrorMessage(error.response.data.message || 'Ошибка регистрации');
