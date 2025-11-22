@@ -41,7 +41,7 @@ export default function Signin() {
         return getTokens({ email, password });
       })
       .then((res) => {
-        console.log(res);
+    
         dispatch(setAccessToken(res.access));
         dispatch(setRefreshToken(res.refresh));
         router.push('/music/main');
@@ -51,7 +51,7 @@ export default function Signin() {
           if (error.response) {
             setErrorMessage(error.response.data.message);
           } else if (error.request) {
-            console.log(error.request);
+      
             setErrorMessage('Что-то с интернетом');
           } else {
             setErrorMessage('Неизвестная ошибка');

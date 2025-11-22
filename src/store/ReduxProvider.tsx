@@ -13,7 +13,6 @@ export default function ReduxProvider({
 
   if (!storeRef.current) {
     storeRef.current = makeStore();
-    console.log('[Redux] Store created:', storeRef.current);
   }
 
   // "window" только на клиенте, поэтому в useEffect

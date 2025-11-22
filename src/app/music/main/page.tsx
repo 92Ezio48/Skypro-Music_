@@ -25,10 +25,10 @@ export default function Home() {
           if (error.response) {
             setError(error.response.data);
           } else if (error.request) {
-            console.log(error.request);
+
             setError('Что-то с интернетом');
           } else {
-            console.log('Error', error.message);
+          
             setError('Неизвестная ошибка');
           }
         }

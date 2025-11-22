@@ -13,7 +13,7 @@ type initialStateType = {
   fetchIsLoading: boolean;
   favoriteTracks: TrackType[];
 };
-const savedFavorites = (() => {
+export const savedFavorites = (() => {
   try {
     return JSON.parse(localStorage.getItem('favoriteTracks') ?? '[]');
   } catch (e) {
