@@ -1,13 +1,11 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './MainNav.module.scss';
 import { useAppDispatch, useAppSelector } from '@/store/store';
 import { clearUser } from '@/store/features/authSlice';
-import { withReauth } from '@/utils/withReAuth';
-import { getTracks } from '@/services/tracks/tracksApi';
 
 export default function MainNav() {
   const dispatch = useAppDispatch();
@@ -26,6 +24,11 @@ export default function MainNav() {
       router.push('/');
     }
   };
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  if (!mounted) return null;
   return (
     <nav className={styles.main__nav}>
       <div className={styles.nav__logoWrap}>

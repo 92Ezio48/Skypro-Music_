@@ -82,10 +82,7 @@ export default function Bar() {
     if (!audioRef.current) return;
     if (isPlay) {
       // Иногда play() кидает ошибку, если до этого не было user interaction, но при клике по треку все ок
-      audioRef.current.play().catch((e) => {
-        // Можешь вывести ошибку в консоль для отладки
-        console.log('play error:', e);
-      });
+      audioRef.current.play().catch((e) => {});
     } else {
       audioRef.current.pause();
     }
@@ -110,8 +107,6 @@ export default function Bar() {
   const onTimeUpdate = () => {
     if (audioRef.current) {
       setCurrentTime(audioRef.current.currentTime);
-      // console.log(audioRef.current.currentTime);
-      // console.log(audioRef.current.duration);
     }
   };
 
@@ -249,6 +244,7 @@ export default function Bar() {
                   <div
                     className={styles.trackPlay__likeBtn}
                     onClick={handleLikeBarClick}
+                    data-testid="like-btn"
                   >
                     <svg
                       className={styles.trackPlay__likeSvg}
